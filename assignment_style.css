@@ -1,0 +1,283 @@
+/* General Styles for Body and Background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+html {
+    font-size: 16px; /* Base font size for scalable typography */
+}
+
+body {
+    background-image: url('background-for-website.jpg'); /* Fixed typo in the image path */
+    background-position: center center; /* Keeps the image centered */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Clean and modern font */
+    color: #000;
+    line-height: 1.6; /* Improves text readability */
+    text-align: justify;
+}
+
+/* Spacing for headings */
+h1, h2, h3 {
+    margin-top: 20px; /* Adds space above headings */
+    margin-bottom: 15px; /* Adds space below headings */
+}
+
+h2 , h3 {
+    color: rgb(162, 108, 0); /* Golden color for headings */
+}
+
+/* General paragraph spacing */
+p {
+    margin-bottom: 20px; /* Adds space after paragraphs */
+    line-height: 1.8; /* Improves readability */
+}
+
+/* Section container for better structure */
+.section {
+    margin-bottom: 40px; /* Adds spacing between sections */
+    padding: 20px; /* Optional: Adds padding for a cleaner look */
+    background-color: rgb(88, 59, 30);
+    border-radius: 10px;
+    color: goldenrod;
+}
+
+/* Specific styles for audio players */
+.audio-container audio {
+    width: 100%; /* Ensures the audio player spans the container width */
+    margin: 10px auto; /* Adds spacing above and below the audio player */
+    display: block; /* Centers the player horizontally */
+}
+
+.audio-container {
+    padding: 10px; /* Padding around the audio player */
+    margin: 20px 0; /* Space between audio container and other elements */
+}
+
+/* List spacing */
+ul, ol {
+    margin-bottom: 20px; /* Space below lists */
+    padding-left: 40px; /* Indentation for better clarity */
+}
+
+li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+}
+
+/* Header Section */
+.header-container {
+    color: rgb(88, 59, 30);
+    background-color: beige;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid gold; /* Decorative border */
+    border-radius: 10px;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-decoration: underline black; /* Underline for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+}
+
+/* Button Group */
+.button-group {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-group button {
+    font-size: 20px;
+    font-family: inherit;
+    color: rgb(88, 59, 30);
+    background-color: beige;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth hover and animation */
+}
+
+.button-group button:hover {
+    background-color: rgb(88, 59, 30); /* Lighter shade for better contrast */
+    color: #f0f0f0;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Main Content Container */
+.centered-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: beige; /* Neutral background for text contrast */
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+/* Table Styles */
+.Tala-Table, .swaras-table {
+    width: 100%; /* Ensures the table fills the container */
+    border-collapse: collapse; /* Removes unnecessary spacing between table cells */
+    margin: 20px 0; /* Adds vertical spacing around the table */
+    border: 1px solid #aaa; /* Improved contrast for borders */
+}
+
+th, td {
+    border: 1px solid #aaa; /* Consistent border styling */
+    padding: 10px; /* Adds spacing inside the cells */
+    text-align: center; /* Centers text within the cells */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #000; /* Default text color */
+    box-sizing: border-box; /* Ensures padding is included in the cell size */
+}
+
+th {
+    background-color: #f2f2f2; /* Light background for headers */
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors for readability */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #aaa; /* Slightly darker background for odd rows */
+}
+
+td:hover {
+    background-color: black; /* Cell turns black on hover */
+    color: goldenrod; /* Text turns goldenrod on hover */
+    cursor: pointer; /* Adds a pointer cursor for better interactivity */
+}
+
+/* Optional: Add transition for smooth hover effect */
+td {
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions for hover */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: rgb(88, 59, 30); /* Dark brown background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    color: goldenrod;
+    border: 1px solid #ddd;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #195d1d; /* Green for action button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Form Field Focus Styling */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: goldenrod; /* Highlight input fields when focused */
+    outline: none;
+}
+
+/* Footer (Optional) */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Ensure iframe responsiveness */
+iframe {
+    display: block; /* Ensures iframe behaves like a block element */
+    max-width: 100%; /* Allows iframe to scale within the container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers the iframe horizontally */
+    border: none; /* Removes unwanted borders */
+}
+
+/* Additional styling for iframe containers */
+.audio-desc-2 {
+    text-align: center; /* Ensures text below iframe is centered */
+    margin-top: 10px; /* Adds space between iframe and description */
+}
+
+.audio-desc-2 p {
+    font-size: 1.25em;
+    color: #000;
+    margin: 5px 0;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    iframe {
+        max-width: 100%;
+        height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    }
+    .centered-content {
+        padding: 15px;
+    }
+
+    .contact-form input[type="submit"] {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Link Styles */
+a {
+    color: rgb(224, 154, 22); /* Distinct gold color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.2s; /* Smooth color transition */
+}
+
+a:visited {
+    color: rgb(224, 154, 22); /* Same as unvisited for consistency */
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+a:active {
+    color: #aa00aa; /* Distinct purple for active state */
+}

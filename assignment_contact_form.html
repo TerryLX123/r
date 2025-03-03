@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Contact Us</title>
+    
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="assignment_style.css"> <!-- Assuming the CSS is in a file named chatgpt.css -->
+</head>
+<body>
+    <!-- Header Container for the title and navigation buttons -->
+    <div class="header-container">
+        <h1>Contact Us & Explore</h1>
+        <!-- Navigation buttons to other pages -->
+        <div class="button-group">
+            <button onclick="location.href='assignment_index.html'">Home</button>
+            <button onclick="location.href='assignment_history.html'">History</button>
+            <button onclick="location.href='assignment_learn_more.html'">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="centered-content">
+        <!-- Introductory text encouraging user interaction -->
+        <p>Please don't hesitate to contact us to get started or further expand your knowledge about Carnatic music, or to start learning it yourself!</p>
+        <p>We can connect you with great teachers to begin your journey in this timeless genre of music, whether it be learning the vocals or any instrument.</p>
+        
+        <!-- Contact form section -->
+        <div class="contact-form"> 
+            <!-- Form for user input -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="590cd357-48a9-4067-9cec-5c6ad7611264">
+                <!-- User name input field -->
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <!-- Email address input field -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <!-- Subject input field -->
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <!-- Message input area -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <!-- Submit button -->
+                <div class="button-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Closing message -->
+        <p>Enjoy your listening!</p>
+    </div>
+</body>
+</html>
